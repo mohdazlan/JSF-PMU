@@ -64,8 +64,8 @@ public class ProcessingServlet extends HttpServlet {
 
 				HttpSession session = request.getSession();
 				session.setAttribute("username", penggunaString);
-				response.sendRedirect("booking.jsp");
-				//request.getRequestDispatcher("booking.jsp").forward(request, response);
+				response.sendRedirect("index.jsp");
+				//request.getRequestDispatcher("index.jsp").forward(request, response);
 			} else {
 				request.setAttribute("mesejRalat", "Kata Laluan Atau Nama Pengguna Anda Silap");
 				request.getRequestDispatcher("login.jsp").forward(request, response);
