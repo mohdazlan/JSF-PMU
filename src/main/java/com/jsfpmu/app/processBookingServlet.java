@@ -66,7 +66,7 @@ public class processBookingServlet extends HttpServlet {
             ps.close();
             conn.close();
 
-            response.sendRedirect("bookingSuccess.jsp"); 
+            response.sendRedirect("booking.jsp"); 
         } catch (Exception e) {
             e.printStackTrace();
             response.sendRedirect("errorPage.jsp");
